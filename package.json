@@ -30,6 +30,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "react-docgen-typescript": "^1.12.3",
     "react-styleguidist": "^8.0.6"
   }
 }
