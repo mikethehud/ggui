@@ -1,6 +1,8 @@
 import React from 'react'
+import styles from './Button.module.scss'
+import classNames from 'classnames'
 
-export type ButtonType = 'default' | 'positive' | 'negative'
+export type ButtonType = 'default' | 'go' | 'stop'
 
 export interface ButtonProps {
     type?: ButtonType
@@ -8,10 +10,10 @@ export interface ButtonProps {
 }
 
 const Button = (props: ButtonProps) => {
-    const { text, type } = props;
+    const { text } = props;
 
     return (
-        <button className={ type }>
+        <button className={classNames(styles['button'], styles['default'])}>
             {text}
         </button>
     )
