@@ -3,7 +3,8 @@ import React from 'react'
 import { LoaderStyles } from './Loader.styles';
 
 export interface LoaderProps {
-    light: boolean
+    light?: Boolean
+    inButton?: Boolean
     size: 'medium' | 'large' | 'xlarge' | 'huge' | 'massive' | 'immense'
 }
 

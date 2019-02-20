@@ -3,7 +3,7 @@ import { sizes, colours, transitions } from '../../theme'
 import { LoaderProps } from './Loader';
 
 
-export const LoaderStyles = ({ light, size }: LoaderProps) => {
+export const LoaderStyles = ({ light, size, inButton }: LoaderProps) => {
 
     const scaleOut = keyframes`
         0% { 
@@ -12,6 +12,11 @@ export const LoaderStyles = ({ light, size }: LoaderProps) => {
             transform: scale(1.0);
             opacity: 0;
         }
+    `
+
+    const inButtonStyles = css`
+        position: absolute;
+        left: ${sizes.tiny};
     `
 
     return css`
@@ -36,5 +41,7 @@ export const LoaderStyles = ({ light, size }: LoaderProps) => {
         &:after {
             animation-delay: -0.75s;
         }
+
+        ${inButton && inButtonStyles}
     `
 }
