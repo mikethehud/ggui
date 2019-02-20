@@ -1,19 +1,19 @@
 import React from 'react'
-import styles from './Button.module.scss'
-import classNames from 'classnames'
+/** @jsx jsx */ import { jsx } from '@emotion/core'
+import { ButtonStyles } from './Button.styles';
 
-export type ButtonType = 'default' | 'go' | 'stop'
+export type ButtonType = 'primary' | 'go' | 'stop' | undefined
 
 export interface ButtonProps {
-    type?: ButtonType
+    type: ButtonType
     text: String
 }
 
 const Button = (props: ButtonProps) => {
-    const { text } = props;
+    const { text, type } = props;
 
     return (
-        <button className={classNames(styles['button'], styles['default'])}>
+        <button css={ButtonStyles({ type })}>
             {text}
         </button>
     )
