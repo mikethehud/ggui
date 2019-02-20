@@ -1,14 +1,15 @@
 const baseSize = .25
 
 const sizes = {
-    tiny:    `${baseSize*1}rem`,
-    small:   `${baseSize*2}rem`,
-    medium:  `${baseSize*3}rem`,
-    large:   `${baseSize*5}rem`,
-    xlarge:  `${baseSize*8}rem`,
-    huge:    `${baseSize*13}rem`,
-    massive: `${baseSize*21}rem`,
-    immense: `${baseSize*34}rem`,
+    micro:   `${baseSize*1}rem`,
+    tiny:    `${baseSize*2}rem`,
+    small:   `${baseSize*3}rem`,
+    medium:  `${baseSize*5}rem`,
+    large:   `${baseSize*8}rem`,
+    xlarge:  `${baseSize*13}rem`,
+    huge:    `${baseSize*21}rem`,
+    massive: `${baseSize*34}rem`,
+    immense: `${baseSize*55}rem`,
 }
 
 const colours = {
